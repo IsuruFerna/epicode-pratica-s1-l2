@@ -8,43 +8,176 @@
          name="description"
          content="Primi passo operativi per creare un modello di pagina HTML per un post. Scropi come iniziare in modo facile"
       />
+      <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+         ul li {
+            display: inline-block;
+            margin: auto 10px;
+         }
+
+         table {
+            border: 1px solid #000;
+            border-collapse: collapse;
+         }
+
+         table caption {
+            font-weight: 600;
+            margin-bottom: 4px;
+         }
+
+         td,
+         th {
+            border: 1px solid #000;
+            padding: 10px;
+         }
+
+         th {
+            background-color: rgba(128, 128, 128, 0.558);
+         }
+
+         aside {
+            background-color: #e7e7e7;
+         }
+
+         footer {
+            display: flex;
+            background-color: #000;
+            color: #fff;
+            height: 3rem;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+         }
+
+         footer p {
+            font-size: 0.9em;
+            margin: auto 30px;
+         }
+      </style>
    </head>
    <body>
       <header>
          <img src="assets\img\logo.svg" alt="page-logo" />
          <nav>
             <ul>
-               <li>Home</li>
-               <li>Articoli</li>
-               <li>Lavora con noi</li>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Articoli</a></li>
+               <li><a href="#">Lavora con noi</a></li>
             </ul>
          </nav>
       </header>
       <main>
-         <article>
+         <div class="post-content">
             <h1 class="article-title">
                Come creare un template per i post di Mario Rossi - pubblicato il
                25-10-2020
             </h1>
-         </article>
-         <table>
-            <thead>
-               <caption>
-                  Diffusione dei CSS
-               </caption>
-               <tr>
-                  <td>Anno</td>
-                  <td>% di utilizzo</td>
-                  <td>Supporto browser</td>
-               </tr>
-            </thead>
-         </table>
+            <table>
+               <thead>
+                  <caption>
+                     Diffusione dei CSS
+                  </caption>
+                  <tr>
+                     <th>Anno</th>
+                     <th>% di utilizzo</th>
+                     <th>Supporto browser</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>2000</td>
+                     <td>20%</td>
+                     <td>17%</td>
+                  </tr>
+                  <tr>
+                     <td>2002</td>
+                     <td>35%</td>
+                     <td>22%</td>
+                  </tr>
+                  <tr>
+                     <td>2004</td>
+                     <td>45%</td>
+                     <td>42%</td>
+                  </tr>
+                  <tr>
+                     <td>2008</td>
+                     <td>80%</td>
+                     <td>51%</td>
+                  </tr>
+                  <tr>
+                     <td>2012</td>
+                     <td>100%</td>
+                     <td>76%</td>
+                  </tr>
+               </tbody>
+            </table>
+            <p>
+               Un test di validazione potrà essere fatto tramite il
+               <a href="https://epicode.com/" target="_blank">tool online</a>
+               dedicato allo scopo. Una volta ottimizzato il tutto, avremo
+               raggiunto il nostro obiettivo ed essere stati dei veri developers
+               come loro:
+            </p>
+            <iframe
+               width="875"
+               height="492"
+               src="https://www.youtube.com/embed/Jqz-OyVQBJ8"
+               title="Lavoro da Capgemini grazie al corso EPICODE"
+               frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               allowfullscreen
+            ></iframe>
+         </div>
+         <div class="container-form">
+            <h4>
+               Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+               nostra newsletter:
+            </h4>
+            <form>
+               <label for="email">inserici l'email</label>
+               <input type="email" required autofocus />
+               <button type="submit">Invia</button>
+            </form>
+         </div>
       </main>
+      <aside>
+         <h2>Articoli correlati</h2>
+         <article>
+            <h3>Validare il codice HTML</h3>
+            <div class="container-sub-aside">
+               <p>Categoria: <a href="#">develop</a></p>
+               <p>Data: 18-8-2020</p>
+            </div>
+         </article>
+         <article>
+            <h3>Correggere la sintassi</h3>
+            <div class="container-sub-aside">
+               <p>Categoria: <a href="#">develop</a></p>
+               <p>Data: 16-9-2020</p>
+            </div>
+         </article>
+         <article>
+            <h3>Meno Kb nella pagina</h3>
+            <div class="container-sub-aside">
+               <p>Categoria: <a href="#">ottimizzazione</a></p>
+               <p>Data: 30-9-2020</p>
+            </div>
+         </article>
+      </aside>
       <footer>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum
-         obcaecati ratione, aliquam ex nulla repellendus sint voluptate corrupti
-         tempora cupiditate perspiciatis nam maiores vel recusandae id ipsam
-         eos! Ratione.
+         <p>Blog Epicode &copy;2023</p>
+         <p>
+            Testata online di Mario Rossi, registrata con prot. n.212/2018 - via
+            Luigi Einaudi 2 - Milano. P.IVA 00112233.
+         </p>
+         <p><a href="info@epicode.school">info@epicode.school</a></p>
       </footer>
    </body>
 </html>
